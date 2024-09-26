@@ -1,0 +1,116 @@
+/* Geral */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Estilos para o container principal */
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1db954;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+select, input {
+  width: 80%;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+select:focus, input:focus {
+  outline: none;
+  border-color: #1db954;
+}
+
+/* Botão de buscar recomendações */
+button {
+  background-color: #1db954;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #17a74b;
+}
+
+/* Estilos para a lista de recomendações */
+.recommendations {
+  margin-top: 40px;
+}
+
+.recommendations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recommendations li {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Nome da música e artista */
+.track-name {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para dispositivos móveis */
+  select, input {
+    width: 95%;
+  }
+
+  button {
+    width: 95%;
+  }
+}
